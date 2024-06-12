@@ -4,9 +4,11 @@ echo "Copying qwiklab files"
 
 # Copy java code
 cp ./code/BasicAuctionClusterClient.java ~/aeron/aeron-samples/src/main/java/io/aeron/samples/cluster/tutorial
-# Copy JAR file
+# Copy JAR files
 mkdir -p ~/aeron/aeron-all/build/libs
 cp ./jar/aeron-all-*.jar ~/aeron/aeron-all/build/libs
+mkdir -p ~/aeron/aeron-agent/build/libs
+cp ./jar/aeron-agent-*.jar ~/aeron/aeron-agent/build/libs
 # Copy cluster scripts
 cp ./scripts/basic-auction-client ~/aeron/aeron-samples/scripts/cluster
 cp ./scripts/basic-auction-cluster ~/aeron/aeron-samples/scripts/cluster
